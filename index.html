@@ -154,7 +154,114 @@
     </section>
 
     <section class="arg">
-        
+        <div class="sameKey">
+            <h1>共通鍵暗号方式</h1>
+            <p>暗号化と復号の両方に同じ鍵を用いる</p>
+            <h2>特徴</h2>
+            <nav>
+                <li>計算量が少ないので、処理が軽い</li>
+                <li>鍵配送問題・・・確実に安全な方法で鍵を渡す必要あり</li>
+            </nav>
+        </div>
+        <div class="sameKeyExample">
+            <div class="lineMain">
+                <div class="contentsA">
+                    <p class="sendPC">PC</p>
+                    <p class="sending">⇨</p>
+                    <p class="argA">暗号アルゴリズム</p>
+                </div>
+                <p class="keyMain">🔐</p>
+                <div class="contentsB">
+                    <p class="argB">復号アルゴリズム</p>
+                    <p class="posting">⇨</p>
+                    <p class="postPC">PC</p>
+                </div>
+            </div>
+            <div class="keyDirectionLine">
+                <p class="keyAdirection">↑</p>
+                <p class="keyBdirection">↑</p>
+            </div>
+            <div class="keyLine">
+                <div class="keyA">
+                    <p>共通鍵</p>
+                </div>
+                <p class="keySendingPC">⇨暗号化に使った鍵を渡す⇨</p>
+                <p class="keySending">⇨</p>
+                
+                <div class="keyB">
+                    <p>共通鍵</p>
+                </div>
+            </div>
+            <div class="line">
+                <h3 class="send">暗号化する人</h3>
+                <h3 class="post">復号する人</h3>
+            </div>
+        </div>
+        <div class="publichKey">
+            <h1>公開鍵暗号方式</h1>
+            <p>復号する人が鍵を用意し、かつ暗号化に使用するペアとなる二つの鍵がある</p>
+            <h2>特徴</h2>
+            <nav>
+                <li>公開鍵は安全ではない方法で渡しても問題ない</li>
+            </nav>
+
+            <div class="publichKeyExaple">
+                <div class="lineMain">
+                    <div class="contentsA">
+                        <p class="sendPC">PC</p>
+                        <p class="sending">⇨</p>
+                        <p class="argA">暗号アルゴリズム</p>
+                    </div>
+                    <p class="keyMain">🔐</p>
+                    <div class="contentsB">
+                        <p class="argB">復号アルゴリズム</p>
+                        <p class="posting">⇨</p>
+                        <p class="postPC">PC</p>
+                    </div>
+                </div>
+                <div class="keyDirectionLine">
+                    <p class="keyAdirection">↑</p>
+                    <p class="keyBdirection">↑</p>
+                </div>
+                <div class="keyLine">
+                    <div class="keyA">
+                        <p>公開鍵</p>
+                    </div>
+
+                    <div class="keyC">
+                        <p>秘密鍵</p>
+                    </div>
+                    <p class="keySendingPC">⇦復号する人の公開鍵を取り寄せる⇦
+                    </p>
+                    <p class="keySending">⇦</p>
+                    <div class="keyB">
+                        <p>公開鍵</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <h3 class="send">暗号化する人</h3>
+                    <h3 class="post">復号する人</h3>
+                </div>
+
+                <div class="pare"></div>
+            </div>
+        </div>
+
+        <h1>PKI</h1>
+        <p>公開鍵が本人のものであると確実にする仕組み</p>
+        <p>　⇨認証局が信頼を保障する</p>
+
+        <h1>ハッシュ関数</h1>
+        <p>情報を与えると一定の長さの要約値を作り出す</p>
+
+        <h1>認証局</h1>
+        <div class="root">
+        <p class="place">ルート認証局</p>
+        <p>↓</p>
+        <p class="place">中間認証局</p>
+        <p>↓</p>
+        <p class="place">ユーザ</p>
+        </div>
     </section>
 
 </body>
