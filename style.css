@@ -91,22 +91,35 @@ p, nav,ol{
 
 
 @media (min-width:600px){
+    .sendMail{
+        width: 100%;
+    }
+
     .MailA, .PCA{
+        left: 10%;
         padding-right: 30px;
         padding-left: 10px;
         border: solid white;
     }
 
     .MailB, .PCB{
+        right: 10%;
         padding-left: 30px;
         padding-right: 10px;
         border: solid white;
     }
     .POP3{
+        right: 18%;
+        top: 40%;
+    }
+    .IMAP4{
         right: 10%;
         top: 40%;
     }
-
+    .SMTP1{
+        left: 10%;
+        top: 40%;
+    }
     .SMTP2{
         left: 50%;
         transform: translate(-50%,0);
@@ -117,4 +130,19 @@ p, nav,ol{
 section img{
     width: 100%;
     margin: 40px 0;
+}
+
+.backButton{
+    position: fixed;
+    right: 5%;
+    top: 50%;
+}
+
+.backButton a p{
+    padding: 10px 20px;
+    border: solid white;
+}
+
+.backButton a p:hover{
+    transform: scale(1.05);
 }
