@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>networkStudy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="start">
+        <h1>コンピュータネットワーク</h1>
+        <h3>期末テスト勉強用サイト</h3>
+    </section>
+    
+    <section class="natnapt">
+        <div class="nat">
+            <h1>NAT</h1>
+            <nav>
+                <li>1:1の変換</li>
+                <li>インターネットにIPパケットを送る時、プライベートIPとグローバルIPに変換するもの</li>
+                <li>グローバルIPが一つしかなければ通信できる内部の端末は1台のみ</li>
+                <li>グローバルIPの枯渇防止には役立たない</li>
+            </nav>
+        </div>
+        <div class="napt">
+            <h1>NAPT</h1>
+            <nav>
+                <li>n:1の変換</li>
+                <li>インターネットにIPパケットを送る時、プライベートIPとポート番号の組み合わせを、ルータのグローバルIPとルータが管理するポート番号の組み合わせに変換するもの</li>
+                <li>グローバルIPが1つで済む。（※送信元ポート番号が固定されてたら無理）</li>
+                <li>内部端末の通信は複数できる。</li>
+                <li>外部から内部にはアクセスできないので、簡易ファイアウォールと呼ばれる。</li>
+            </nav>
+        </div>
+    </section>
+
+    <section class="domain">
+        <h1>ドメイン</h1>
+        <p>世界で唯一になるIPアドレス</p>
+    </section>
+    
+    <section class="dnsServer">
+        <h1>DNS</h1>
+        <p>ドメイン名とIPアドレスを相互に変換する仕組み</p>
+        <h2>DNSの構成要素</h2>
+        <nav>
+            <li>スタブリゾルバ</li>
+            <li>キャッシュサーバ</li>
+            <li>コンテンツサーバ</li>
+        </nav>
+        <p>コンテンツサーバでは、再帰問い合わせが行われている</p>
+    </section>
+
+    <section class="mail">
+        <h1>メールのプロトコル</h1>
+        <nav>
+            <li>SMTP・・・送信用（基本的にはユーザの認証が必要ない。つまり、誰にでも送ることができる。）</li>
+            <li>POP3・・・受信用（メールサーバにアクセスして、読み出したメールは端末に保存して、サーバからは削除する。）</li>
+            <li>IMAP4・・・受信用（メールサーバにアクセスして、メールサーバに保管してあるメールを必要な時に取り出して端末に保存する。）</li>
+        </nav>
+
+        <div class="sendMail">
+            <p class="MailA">MailServerA</p>
+            <p class="MailB">MailServerB</p>
+            <p class="PCA">PC-A</p>
+            <p class="PCB">PC-B</p>
+            <p class="SMTP1">↑SMTP</p>
+            <p class="SMTP2">SMTP⇨</p>
+            <p class="POP3">↓POP3</p>
+            <p class="IMAP4">↑IMAP4</p>
+        </div>
+
+        <h2>迷惑メールの対策</h2>
+
+        <nav>
+            <li>SMTPの587番のポート・・・・ユーザ認証ができるため、迷惑メールの防止ができる</li>
+            <li>SMTPの25番のポート・・・・ユーザ認証ができない。k露絵を587番にするのがOP25B</li>
+            <li>SPF・・・メールサーバを事前に登録するもの（ホワイトリスト的な）。⇨迷惑メールの防止ができる。</li>
+        </nav>
+    </section>
+
+    <section class="DHCP">
+        <h1>DHCP</h1>
+        <p>端末にIPアドレス、サブネットマスク、デフォルトルータ、DNSサーバなどを割り当てるもので、通常はルータの中に入っている。</p>
+        <p>　⇨要はすぐにネットが使えるのはこいつのおかげってこと。</p>
+
+        <h2>通信の手順</h2>
+        <ol>
+            <li>DHCPディスカバー：IPが欲しい</li>
+            <li>DHCPオファー：いいよ！こんなのはどう？</li>
+            <li>DHCPリクエスト：それちょうだい</li>
+            <li>DHCPアーク：これあげる</li>
+        </ol>
+
+        <h2>リース時間に関して</h2>
+        <nav>
+            <li>一般家庭・・・IPなどの情報を保管しておく必要があるから、リース時間が長め</li>
+            <li>大学など・・・IP不足の防止をするために、リース時間が短め</li>
+        </nav>
+    </section>
+
+    <section class="rooting">
+        <h1>ルーティングプロトコル</h1>
+        <p>ルータ同士がやりとりするもの⇨最適な経路を選択する。</p>
+        <nav>
+            <li>経路選択を人間でやる
+                <br>
+                　⇨スタティックルーティング
+            </li>
+            <li>ルータ同士が自動で勝手にやる
+                <br>
+                　⇨ダイナミックルーティング
+            </li>
+        </nav>
+    </section>
+    
+    <section class="security">
+        <h1>情報セキュリティ</h1>
+        <h2>基本要素</h2>
+        <ol>
+            <li>機密性<br>　⇨認められた人だけがアクセスできる</li>
+            <li>完全性<br>　⇨矛盾の発生や改ざんができない</li>
+            <li>可用性<br>　⇨必要な時に中断なくアクセスできる</li>
+            <li>真正性<br>　⇨関わるものが本人であることや情報が本物である</li>
+            <li>責任追跡性<br>　⇨情報の作成や変更を追跡することができる<br>　　⇨ログを残す</li>
+            <li>信頼性<br>　⇨動作や結果が意図したものである</li>
+            <li>否認防止<br>　⇨活動や事象が後で否認できない<br>　　⇨ログが無いと分からない</li>
+        </ol>
+
+        <h2>ファイアウォール</h2>
+        <p>ネットワークの出入り口に設置して、外部からあいぶへの不正なアクセスを遮断</p>
+
+        <h2>UTM</h2>
+        <p>自動でセキュリティ対策をするもの<br>　⇨管理者がいないときに便利</p>
+        <nav>
+            <li>IDS<br>　⇨不正アクセスの検知</li>
+            <li>IPS<br>　⇨不正アクセスの検知をした後に遮断もやってくれる</li>
+            <li>WAF<br>　⇨ Webアプリに特化したファイアウォールのこと</li>
+            <li>VPN<br>　⇨情報を抜かれないようにするものであり、ファイアウォールの中に入っている。</li>
+        </nav>
+        
+        <h2>セキュリティソフトを選ぶ時のポイント</h2>
+        <nav>
+            <li>検出率や処理の軽さ</li>
+            <li>他のプログラムとの相性問題の少なさ</li>
+            <li>他のユーザの評判</li>
+            <li>マルチプラットフォームであるかどうか（※OSが何でも大丈夫なやつ）</li>
+        </nav>
+
+        <img src="スクリーンショット 2023-07-22 12.40.04.png" alt="情報セキュリティ対策の名称と意味">
+        <img src="スクリーンショット 2023-07-22 12.40.13.png" alt="機能マトリクス">
+    </section>
+
+</body>
+</html>
