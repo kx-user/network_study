@@ -154,7 +154,6 @@ section img{
 
 .sameKeyExample, .publichKeyExaple{
     width: 90%;
-    border: solid white 2px;
     
     padding: 10px;
     position: relative;
@@ -351,4 +350,85 @@ section img{
         width: 170px;
         height: 150px;
     }
+}
+
+.root{
+    position: relative;
+    height: 300px;
+}
+
+.place1, .place2, .place3{
+    position: absolute;
+    border: solid white 1px;
+    padding: 10px 20px;
+}
+
+.place1, .place2{
+    left: 100px;
+}
+
+.place1{
+    top: 10px;
+}
+
+.place2, .place3{
+    top: 200px;
+}
+
+.place3{
+    right: 100px;
+}
+
+.direction1, .direction2, .direction3, .direction4{
+    position: absolute;
+    font-size: 30pt;
+}
+
+.direction1{
+    left: 50%;
+    top: 180px;
+    transform: scaleX(7);
+}
+
+.direction2{
+    top: 80px;
+    transform: scaleY(3);
+    left: 20%;
+}
+
+.direction3{
+    top: 80px;
+    transform: scaleY(3);
+    left: 10%;
+}
+
+.direction4{
+    top: 150px;
+    transform: scaleX(7);
+    left: 50%;
+}
+
+.info1, .info2, .info3, .info4{
+    font-size: 10pt;
+    position: absolute;
+}
+
+.info1{
+    left: 50%;
+    top: 250px;
+}
+
+.info2{
+    left: 25%;
+    top: 100px;
+}
+
+.info3{
+    left: 0.5%;
+    top: 100px;
+}
+
+.info4{
+    left: 50%;
+    top: 160px;
 }
