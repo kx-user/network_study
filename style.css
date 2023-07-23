@@ -432,3 +432,13 @@ section img{
     left: 50%;
     top: 160px;
 }
+
+.markLine{
+    display: flex;
+}
+
+.markLine img{
+    width: 10%;
+    margin-left: 0px;
+    margin-right: 20px;
+}
