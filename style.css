@@ -20,24 +20,24 @@ section{
 }
 
 .start a p{
-    color: white;
+    color: rgb(220, 220, 220);
 }
 
 h1{
     text-decoration: underline;
-    color: white;
+    color: rgb(220, 220, 220);
 }
 
 h2{
     font-size: 14pt;
-    color: white;
+    color: rgb(220, 220, 220);
 }
 
 h3{
-    color: white;
+    color: rgb(220, 220, 220);
 }
 p, nav,ol{
-    color: white;
+    color: rgb(220, 220, 220);
 }
 
 .sendMail{
@@ -1104,6 +1104,421 @@ section img{
     left: 1008px;
     height: 28px;
     width: 150px;
+}
+
+.hideBlock90{
+    top: 5357px;
+    left: 220px;
+    height: 20px;
+    width: 50px;
+}
+
+.hideBlock91{
+    top: 5357px;
+    left: 280px;
+    height: 20px;
+    width: 40px;
+}
+
+.hideBlock92{
+    top: 5447px;
+    left: 237px;
+    height: 20px;
+    width: 51px;
+}
+
+.hideBlock93{
+    top: 5447px;
+    left: 397px;
+    height: 20px;
+    width: 37px;
+}
+
+.hideBlock94{
+    top: 5471px;
+    left: 237px;
+    height: 20px;
+    width: 51px;
+}
+
+.hideBlock95{
+    top: 5838px;
+    left: 220px;
+    height: 20px;
+    width: 80px;
+}
+
+.hideBlock96{
+    top: 5838px;
+    left: 440px;
+    height: 20px;
+    width: 53px;
+}
+
+.hideBlock96{
+    top: 5928px;
+    left: 240px;
+    height: 20px;
+    width: 50px;
+}
+
+.hideBlock96{
+    top: 6428px;
+    left: 220px;
+    height: 20px;
+    width: 50px;
+}
+
+.hideBlock97{
+    top: 6470px;
+    left: 250px;
+    height: 20px;
+    width: 50px;
+}
+
+.hideBlock98{
+    top: 6550px;
+    left: 220px;
+    height: 20px;
+    width: 33px;
+}
+
+.hideBlock99{
+    top: 6550px;
+    left: 427px;
+    height: 20px;
+    width: 49px;
+}
+
+.hideBlock100{
+    top: 7110px;
+    left: 215px;
+    height: 30px;
+    width: 49px;
+}
+
+.hideBlock101{
+    top: 7160px;
+    left: 220px;
+    height: 20px;
+    width: 49px;
+}
+
+.hideBlock102{
+    top: 7160px;
+    left: 490px;
+    height: 20px;
+    width: 80px;
+}
+
+.hideBlock103{
+    top: 7200px;
+    left: 215px;
+    height: 30px;
+    width: 49px;
+}
+
+.hideBlock104{
+    top: 7240px;
+    left: 220px;
+    height: 20px;
+    width: 49px;
+}
+
+.hideBlock105{
+    top: 7240px;
+    left: 433px;
+    height: 20px;
+    width: 40px;
+}
+
+.hideBlock106{
+    top: 7240px;
+    left: 570px;
+    height: 20px;
+    width: 40px;
+}
+
+.hideBlock107{
+    top: 7324px;
+    left: 288px;
+    height: 20px;
+    width: 33px;
+}
+
+.hideBlock109{
+    top: 7350px;
+    left: 238px;
+    height: 20px;
+    width: 99px;
+}
+
+.hideBlock110{
+    top: 7350px;
+    left: 350px;
+    height: 20px;
+    width: 99px;
+}
+
+.hideBlock111{
+    top: 7350px;
+    left: 625px;
+    height: 20px;
+    width: 29px;
+}
+
+.hideBlock112{
+    top: 7372px;
+    left: 239px;
+    height: 20px;
+    width: 36px;
+}
+
+
+.hideBlock113{
+    top: 7398px;
+    left: 276px;
+    height: 20px;
+    width: 47px;
+}
+
+.hideBlock114{
+    top: 7398px;
+    left: 896px;
+    height: 20px;
+    width: 47px;
+}
+
+.hideBlock115{
+    top: 7420px;
+    left: 322px;
+    height: 20px;
+    width: 96px;
+}
+
+.hideBlock116{
+    top: 7420px;
+    left: 570px;
+    height: 20px;
+    width: 102px;
+}
+
+.hideBlock117{
+    top: 7420px;
+    left: 940px;
+    height: 20px;
+    width: 22px;
+}
+
+.hideBlock118{
+    top: 7520px;
+    left: 458px;
+    height: 20px;
+    width: 31px;
+}
+
+.hideBlock119{
+    top: 7747px;
+    left: 278px;
+    height: 20px;
+    width: 32px;
+}
+
+.hideBlock120{
+    top: 7747px;
+    left: 328px;
+    height: 20px;
+    width: 48px;
+}
+
+.hideBlock121{
+    top: 8100px;
+    left: 218px;
+    height: 20px;
+    width: 288px;
+}
+
+.hideBlock122{
+    top: 8140px;
+    left: 218px;
+    height: 20px;
+    width: 40px;
+}
+
+.hideBlock123{
+    top: 8182px;
+    left: 238px;
+    height: 20px;
+    width: 90px;
+}
+
+.hideBlock124{
+    top: 8182px;
+    left: 348px;
+    height: 20px;
+    width: 180px;
+}
+
+.hideBlock125{
+    top: 8270px;
+    left: 220px;
+    height: 20px;
+    width: 36px;
+}
+
+.hideBlock126{
+    top: 8270px;
+    left: 220px;
+    height: 20px;
+    width: 36px;
+}
+
+.hideBlock127{
+    top: 8270px;
+    left: 268px;
+    height: 20px;
+    width: 47px;
+}
+
+.hideBlock128{
+    top: 8270px;
+    left: 328px;
+    height: 20px;
+    width: 120px;
+}
+
+.hideBlock129{
+    top: 8270px;
+    left: 458px;
+    height: 20px;
+    width: 94px;
+}
+
+.hideBlock130{
+    top: 8270px;
+    left: 560px;
+    height: 20px;
+    width: 94px;
+}
+
+.hideBlock131{
+    top: 8310px;
+    left: 237px;
+    height: 20px;
+    width: 44px;
+}
+
+.hideBlock132{
+    top: 8350px;
+    left: 237px;
+    height: 20px;
+    width: 54px;
+}
+
+.hideBlock133{
+    top: 8388px;
+    left: 237px;
+    height: 20px;
+    width: 94px;
+}
+
+.hideBlock134{
+    top: 8428px;
+    left: 237px;
+    height: 20px;
+    width: 94px;
+}
+
+.hideBlock135{
+    top: 8468px;
+    left: 237px;
+    height: 20px;
+    width: 134px;
+}
+
+.hideBlock136{
+    top: 8510px;
+    left: 237px;
+    height: 20px;
+    width: 163px;
+}
+
+.hideBlock137{
+    top: 8590px;
+    left: 237px;
+    height: 20px;
+    width: 43px;
+}
+
+.hideBlock138{
+    top: 8617px;
+    left: 237px;
+    height: 20px;
+    width: 43px;
+}
+
+.hideBlock139{
+    top: 8617px;
+    left: 542px;
+    height: 20px;
+    width: 38px;
+}
+
+.hideBlock140{
+    top: 8617px;
+    left: 752px;
+    height: 20px;
+    width: 38px;
+}
+
+.hideBlock141{
+    top: 8617px;
+    left: 1112px;
+    height: 20px;
+    width: 78px;
+}
+
+.hideBlock142{
+    top: 8719px;
+    left: 237px;
+    height: 20px;
+    width: 148px;
+}
+
+.hideBlock143{
+    top: 8719px;
+    left: 477px;
+    height: 20px;
+    width: 36px;
+}
+
+.hideBlock144{
+    top: 8749px;
+    left: 237px;
+    height: 20px;
+    width: 110px;
+}
+
+.hideBlock145{
+    top: 8749px;
+    left: 447px;
+    height: 20px;
+    width: 59px;
+}
+
+
+.hideBlock146{
+    top: 8829px;
+    left: 267px;
+    height: 20px;
+    width: 50px;
+}
+
+.hideBlock147{
+    top: 8829px;
+    left: 457px;
+    height: 20px;
+    width: 37px;
 }
 
 @media (min-width:600px){
