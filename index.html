@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="script.js"></script>
+    <p class="hideButton" onclick="showElements()">隠す</p>
+    <p class="hideButton" onclick="hideElements()">解除</p>
+
     <section class="start">
         <h1>コンピュータネットワーク</h1>
         <h3>期末テスト勉強用サイト</h3>
@@ -257,6 +261,7 @@
         <p>情報を与えると一定の長さの要約値を作り出す</p>
 
         <h2>認証局</h2>
+        <p class="bug">多分スマホだとここの表示バグってる</p>
         <div class="root">
         <p class="place1">ルート認証局</p>
         
@@ -304,6 +309,145 @@
             <li>超短波・・・FMラジオ</li>
             <li>極超短波・・・地デジ、無線LAN携帯電話</li>
         </ol>
+
+        <h2>電波</h2>
+        <p>同じ周波数の通信があると干渉してお互いの通信を妨害し合ってしまう</p>
+        <p>⇨干渉を防ぐため、総務省が利用計画を定めている。</p>
     </section>
+
+    <section class="lan">
+        <h1>無線LAN</h1>
+        <h2>インフラストラクチャーモード</h2>
+        <p>Wi-Fiを使うときに用いられる形態</p>
+        <p>⇨端末（STA）とアクセスポイント（AP）が接続する</p>
+        <h2>ビーコン</h2>
+        <p>SSID, BSSID, ビーコン送信間隔, ビットレート, セキュリティ情報が含まれる</p>
+        <p>※SSID・・・ネットワークの名前(含まれてなかったら、ステルスモードという。)</p>
+        <p>※BSSID・・・Macアドレス</p>
+        <p>※ビットレート・・・通信速度</p>
+        <p>※セキュリティ情報・・・WPA2</p>
+        <p>※WPA2-パーソナル・・・普通のWPA</p>
+        <p>※WPAエンタープライズ・・・接続にパスワードが必要なタイプ</p>
+
+        <h2>接続</h2>
+        <nav>
+            <li>BSS・・・APと1つ以上のSTA</li>
+            <li>ESS・・・個体としては別物だが、複数のBSSを一つとして扱う。同じSSIDを与えることができる。これを実現するのがローミングと呼ばれる技術である。</li>
+        </nav>
+
+        <h2>MIMO</h2>
+        <nav>
+            <li>ビームフォーミング・・・特定の方向に電波を強く出す</li>
+            <li>ダイバーシティ・・・複数のアンテナを利用して、受信状態の良い状況を作り出す</li>
+        </nav>
+
+        <h2>MU-MIMO</h2>
+        <p>一つの周波数だけで複数の機器へ同時に接続を送る</p>
+        <p>⇨スマホなどの端末が多い環境でも通信速度が低下しにくい</p>
+
+        <h2>セキュリティ</h2>
+        <p>電波なので、原理的に無線LANは情報を取られやすいため、認証を強化する必要がある。具体的には、事前鍵共有方式（PSK）や、認証サーバー方式（IEEE802.1X）がある。</p>
+
+        <h2>信号の強度</h2>
+        <p>強いほど通信が安定する<br>↓</p>
+        <p>弱かったら</p>
+        <nav>
+            <li>距離を近づける</li>
+            <li>障害物を取り除く</li>
+            <li>周辺の自由空間を広くする</li>
+        </nav>
+    </section>
+
+    <div class="hideBlock hideBlock1"></div>
+    <div class="hideBlock hideBlock2"></div>
+    <div class="hideBlock hideBlock3"></div>
+    <div class="hideBlock hideBlock4"></div>
+    <div class="hideBlock hideBlock5"></div>
+    <div class="hideBlock hideBlock6"></div>
+    <div class="hideBlock hideBlock7"></div>
+    <div class="hideBlock hideBlock8"></div>
+    <div class="hideBlock hideBlock9"></div>
+    <div class="hideBlock hideBlock10"></div>
+    <div class="hideBlock hideBlock11"></div>
+    <div class="hideBlock hideBlock12"></div>
+    <div class="hideBlock hideBlock13"></div>
+    <div class="hideBlock hideBlock14"></div>
+    <div class="hideBlock hideBlock15"></div>
+    <div class="hideBlock hideBlock16"></div>
+    <div class="hideBlock hideBlock17"></div>
+    <div class="hideBlock hideBlock18"></div>
+    <div class="hideBlock hideBlock19"></div>
+    <div class="hideBlock hideBlock20"></div>
+    <div class="hideBlock hideBlock21"></div>
+    <div class="hideBlock hideBlock22"></div>
+    <div class="hideBlock hideBlock23"></div>
+    <div class="hideBlock hideBlock24"></div>
+    <div class="hideBlock hideBlock25"></div>
+    <div class="hideBlock hideBlock26"></div>
+    <div class="hideBlock hideBlock27"></div>
+    <div class="hideBlock hideBlock28"></div>
+    <div class="hideBlock hideBlock29"></div>
+    <div class="hideBlock hideBlock30"></div>
+    <div class="hideBlock hideBlock31"></div>
+    <div class="hideBlock hideBlock32"></div>
+    <div class="hideBlock hideBlock33"></div>
+    <div class="hideBlock hideBlock34"></div>
+    <div class="hideBlock hideBlock35"></div>
+    <div class="hideBlock hideBlock36"></div>
+    <div class="hideBlock hideBlock37"></div>
+    <div class="hideBlock hideBlock38"></div>
+    <div class="hideBlock hideBlock39"></div>
+    <div class="hideBlock hideBlock40"></div>
+    <div class="hideBlock hideBlock41"></div>
+    <div class="hideBlock hideBlock42"></div>
+    <div class="hideBlock hideBlock43"></div>
+    <div class="hideBlock hideBlock44"></div>
+    <div class="hideBlock hideBlock45"></div>
+    <div class="hideBlock hideBlock46"></div>
+    <div class="hideBlock hideBlock47"></div>
+    <div class="hideBlock hideBlock48"></div>
+    <div class="hideBlock hideBlock49"></div>
+    <div class="hideBlock hideBlock50"></div>
+    <div class="hideBlock hideBlock51"></div>
+    <div class="hideBlock hideBlock52"></div>
+    <div class="hideBlock hideBlock53"></div>
+    <div class="hideBlock hideBlock54"></div>
+    <div class="hideBlock hideBlock55"></div>
+    <div class="hideBlock hideBlock56"></div>
+    <div class="hideBlock hideBlock57"></div>
+    <div class="hideBlock hideBlock58"></div>
+    <div class="hideBlock hideBlock59"></div>
+    <div class="hideBlock hideBlock60"></div>
+    <div class="hideBlock hideBlock61"></div>
+    <div class="hideBlock hideBlock62"></div>
+    <div class="hideBlock hideBlock63"></div>
+    <div class="hideBlock hideBlock64"></div>
+    <div class="hideBlock hideBlock65"></div>
+    <div class="hideBlock hideBlock66"></div>
+    <div class="hideBlock hideBlock67"></div>
+    <div class="hideBlock hideBlock68"></div>
+    <div class="hideBlock hideBlock69"></div>
+    <div class="hideBlock hideBlock70"></div>
+    <div class="hideBlock hideBlock71"></div>
+    <div class="hideBlock hideBlock72"></div>
+    <div class="hideBlock hideBlock73"></div>
+    <div class="hideBlock hideBlock74"></div>
+    <div class="hideBlock hideBlock75"></div>
+    <div class="hideBlock hideBlock76"></div>
+    <div class="hideBlock hideBlock77"></div>
+    <div class="hideBlock hideBlock78"></div>
+    <div class="hideBlock hideBlock79"></div>
+    <div class="hideBlock hideBlock80"></div>
+    <div class="hideBlock hideBlock81"></div>
+    <div class="hideBlock hideBlock82"></div>
+    <div class="hideBlock hideBlock83"></div>
+    <div class="hideBlock hideBlock84"></div>
+    <div class="hideBlock hideBlock85"></div>
+    <div class="hideBlock hideBlock86"></div>
+    <div class="hideBlock hideBlock87"></div>
+    <div class="hideBlock hideBlock88"></div>
+    <div class="hideBlock hideBlock89"></div>
+    <div class="hideBlock hideBlock90"></div>
+   
 </body>
 </html>
